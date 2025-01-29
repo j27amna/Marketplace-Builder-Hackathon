@@ -3,7 +3,7 @@ import React from 'react';
 import Togglebutton from './Togglebutton';
 import { BiMenuAltRight } from "react-icons/bi";
 
-const Nav = () => {
+const Navigation = () => {
   return (
    <nav>
     <div className='md:bg-[#252B42] md:text-white md:px-[20px] md:h-[60px] md:flex md:flex-row md:justify-between md:items-center hidden'>
@@ -115,4 +115,4 @@ const Nav = () => {
   )
 };
 
-export default Nav;
+export default Navigation;
