@@ -24,7 +24,7 @@ const page = () => {
              Simple Pricing
              </h1>
              <div className="flex justify-center items-center gap-[15px] py-[10px] text-[#737373] font-bold text-sm">
-              <a href="/" className="text-[#252B42] hover:underline">Home</a>
+              <Link href="/" className="text-[#252B42] hover:underline">Home</Link>
                 <AiOutlineRight />
               <h6>Pricing</h6>
              </div>
