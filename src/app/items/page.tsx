@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../shop/components/Navbar'
 import Logos from '../shop/components/Logos'
-import { FaStar, FaRegStar ,FaHeart, FaShoppingCart, FaEye } from "react-icons/fa";
+import { FaStar, FaRegStar} from "react-icons/fa";
 import { GrNext, GrPrevious } from "react-icons/gr";
 import { IoEye } from "react-icons/io5";
 import Link from 'next/link';
