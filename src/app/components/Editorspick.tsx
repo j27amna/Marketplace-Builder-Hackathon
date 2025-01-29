@@ -2,6 +2,7 @@ const Editorspick = () => {
   return (
     <section className="py-[80px] bg-[#FAFAFA]">
       <div className="max-w-6xl mx-auto px-4 text-center">
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
         <h3 className="text-2xl font-bold mb-4 text-[#252B42]">Editor's Pick</h3>
         <p className="text-[#737373] text-[14px] font-normal mb-8">
           Problems trying to resolve <br className="block md:hidden" /> the conflict between trends and quality.
