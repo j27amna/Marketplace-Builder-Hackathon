@@ -9,10 +9,10 @@ const FreeTrialSection = () => {
 </svg>
 
       <div className="gap-[36px]">
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
         <h5 className="font-bold text-base text-[#252B42] ">WE Can't WAIT TO MEET YOU</h5>
-        <h2 className="text-[58px] font-bold text-[#252B42] my-6">
-        Let's Talk
-        </h2>
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
+        <h2 className="text-[58px] font-bold text-[#252B42] my-6">Let's Talk</h2>
 
         <Link href="/pricing">
         <button className="mb-1 px-[40px] py-[15px] font-bold text-sm bg-[#23A6F0] text-[#FFFFFF] rounded-md hover:bg-blue-500">
