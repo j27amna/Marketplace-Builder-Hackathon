@@ -5,7 +5,7 @@ import { BiMenuAltRight } from "react-icons/bi";
 
 const Nav = () => {
   return (
-   <div>
+   <section>
     <div className='md:bg-[#252B42] md:text-white md:px-[20px] md:h-[60px] md:flex md:flex-row md:justify-between md:items-center hidden'>
       <div className='flex flex-row gap-10 px-3 font-bold text-[14px]'>
         <h6 className='flex gap-[10px]'> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-telephone mt-1 text-lg" viewBox="0 0 16 16">
@@ -111,7 +111,7 @@ const Nav = () => {
   </div>
  </div>
 </div>
-</div> 
+</section> 
   )
 };
 
