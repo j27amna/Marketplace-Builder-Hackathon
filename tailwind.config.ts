@@ -1,4 +1,6 @@
+import { Montserrat } from "next/font/google";
 import type { Config } from "tailwindcss";
+import {Suspense} from "react";
 
 export default {
   content: [
@@ -11,6 +13,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        montserrat: ['var(--font-montserrat)', 'sans-serif'] 
+      },
+      backgroundImage: {
+        'heroimg': "url('/images/heroimg.jpg')",
       },
     },
   },
