@@ -7,6 +7,7 @@ import Faqs from './components/Faqs'
 import Freetrial from '../innovation/components/Freetrial'
 import Footer from '../components/Footer'
 import {Suspense} from "react";
+import Link from 'next/link';
 
 const page = () => {
   return (
