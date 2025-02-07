@@ -7,6 +7,7 @@ import Searchbar from './Searchbar';
 
 const Navigation = () => {
   return (
+    <>
     <nav>
     <div className='md:bg-[#252B42] md:text-white md:px-[20px] md:h-[60px] md:flex md:flex-row md:justify-between md:items-center hidden'>
       <div className='flex flex-row gap-10 px-3 font-bold text-[14px]'>
