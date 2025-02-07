@@ -8,7 +8,6 @@ import { urlFor } from "@/sanity/lib/image";
 import { Products } from "../../../../types/products";
 import { allProducts } from "@/sanity/lib/queries";
 import { addToCart } from "@/app/actions/actions";
-import { log } from "console";
 import Swal from "sweetalert2";
 
 const client = createClient({
@@ -18,8 +17,6 @@ const client = createClient({
 });
 
 const ShopPage = () => {
-  const [products, setProducts] = useState([]);
-  const [product, setProduct] = useState<Products[]>([])
   const [filteredProducts, setFilteredProducts] = useState([]);
   const searchParams = useSearchParams();
   const searchQuery = searchParams.get('search') || undefined;
@@ -80,7 +77,7 @@ const ShopPage = () => {
         <div className="sm:grid sm:grid-cols-2 md:grid-cols-4 gap-[30px] sm:mx-3 sm:mb-5 grid-cols-1 mb-2 mx-11">
           {filteredProducts.length > 0 ? (
             filteredProducts.map((product : Products) => (
-              <Link href={`Product/${product._id}`}>
+              <Link key={product._id} href={`Product/${product._id}`}>
               <div key={product._id} className="bg-[#FFFFFF] hover:shadow-xl overflow-hidden sm:w-[242px] sm:h-[630px] w-[328px] h-[630px] group mb-11 flex-col justify-center text-center items-center cursor-pointer">
                   <div className="relative">
                     {product.productImage && (
