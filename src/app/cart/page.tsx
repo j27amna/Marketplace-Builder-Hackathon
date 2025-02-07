@@ -3,8 +3,6 @@ import Swal from 'sweetalert2';
 import { getCartItems, removeFromCart, updateCart } from '../actions/actions';
 import { Products } from './../../../types/products'
 import React, { useEffect, useState } from 'react'
-import Image from 'next/image';
-import imageUrlBuilder from '@sanity/image-url'
 import { urlFor } from '@/sanity/lib/image';
 import { useRouter } from 'next/navigation';
 
