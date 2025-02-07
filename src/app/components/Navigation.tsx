@@ -116,7 +116,3 @@ const Navigation = () => {
 };
 
 export default Navigation;
-};
-
-export default Navigation;
->>>>>>> 951b560 (initial commit):src/app/components/Navigation.tsx
