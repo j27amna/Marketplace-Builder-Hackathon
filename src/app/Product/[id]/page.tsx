@@ -12,8 +12,9 @@ import Logos from '@/app/shop/components/Logos';
 import Footer from '@/app/components/Footer';
 import { urlFor } from '@/sanity/lib/image';
 import Image from 'next/image';
+import { PageProps } from "next";
 
-const page = async ({params: {id}} : {params: {id : string}}) => {
+const page = async ({ params }: PageProps<{ id: string }>) => {
 
     const query = `*[_type == "product" && _id == $id]{
   title, price, description,
