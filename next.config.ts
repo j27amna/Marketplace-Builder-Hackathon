@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
-import {Suspense} from "react";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+ images : {
+    domains : ['cdn.sanity.io'],
+ },
 };
 
 export default nextConfig;

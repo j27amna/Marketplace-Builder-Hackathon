@@ -1,6 +1,5 @@
 import { Montserrat } from "next/font/google";
 import type { Config } from "tailwindcss";
-import {Suspense} from "react";
 
 export default {
   content: [

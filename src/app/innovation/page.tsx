@@ -1,4 +1,3 @@
-import React from "react";
 import { AiOutlineRight } from "react-icons/ai";
 import Navbar from "../about/components/Navbar";
 import Freetrial from "./components/Freetrial";

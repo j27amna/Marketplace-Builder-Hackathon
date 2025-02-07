@@ -1,19 +1,18 @@
-import React from "react"
 import {Suspense} from "react";
 import Editorspick from "./components/Editorspick"
 import Bestsellers from "./components/Bestsellers"
 import Vitaproducts from "./components/Vitaproducts"
 import Featuredposts from "./components/Featuredposts"
 import Neuraluniverse from "./components/Neuraluniverse"
-import Nav from "./components/Nav"
 import Link from "next/link"
 import Footer from "./components/Footer"
+import Navigation from "./components/Navigation";
 
 export default function Home() {
   return (
     <main>
       <Suspense>
-        <Nav />
+        <Navigation />
       </Suspense>
       <Suspense>
     <section className="bg-heroimg md:w-full md:h-[715px] md:object-cover md:bg-center bg-left h-[753px] w-screen">

@@ -44,6 +44,7 @@ const ShopPage = () => {
             
           ))}
         </div>
+<<<<<<< HEAD
         <div className="flex md:flex-row flex-col justify-between items-center w-auto h-[98px] my-8 bg-[#FFFFFF]">
           <h6 className="text-sm font-bold text-[#737373]">
             Showing all 12 results
@@ -73,6 +74,8 @@ const ShopPage = () => {
             </button>
           </div>
         </div>
+=======
+>>>>>>> 951b560 (initial commit)
       </div>
     </section>
     </Suspense>
