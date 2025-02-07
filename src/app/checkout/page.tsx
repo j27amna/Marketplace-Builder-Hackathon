@@ -4,7 +4,6 @@ import { Products } from '../../../types/products';
 import { getCartItems } from '../actions/actions';
 import Link from 'next/link';
 import { CgChevronRight } from 'react-icons/cg';
-import Image from 'next/image';
 import { urlFor } from '@/sanity/lib/image';
 import Swal from 'sweetalert2';
 import { client } from '@/sanity/lib/client';
