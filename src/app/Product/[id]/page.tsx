@@ -22,7 +22,7 @@ const page = async ({ params }: PageProps<{ id: string }>) => {
      "id": _id,
 }[0]`
 
-     const product : Products | null = await client.fetch(query, {id})
+     const product : Products | null = await client.fetch(query, {id : params.id})
 
      if (!product) {
          return (
@@ -30,7 +30,7 @@ const page = async ({ params }: PageProps<{ id: string }>) => {
                    <p className='flex items-center justify-center text-center text-[20px] w-full text-[#252B42]'><em>Sorry! This product is not available.</em></p>
                 </div>
          )
-     }
+     } console.log("Product ID:", params.id);
 
   return (
     <div key={id}>
