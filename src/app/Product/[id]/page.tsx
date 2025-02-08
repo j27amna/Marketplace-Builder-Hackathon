@@ -13,13 +13,7 @@ import Footer from '@/app/components/Footer';
 import { urlFor } from '@/sanity/lib/image';
 import Image from 'next/image';
 
-interface PageProps {
-  params: {
-    id: string;
-  };
-}
-
-const Page = async ({ params }: PageProps) => {
+const Page = async ({ params }: { params: { id: string } }) => {
   const query = `*[_type == "product" && _id == $id]{
     title, price, description, isNew,
     "image": productImage.asset._ref,
@@ -59,11 +53,11 @@ const Page = async ({ params }: PageProps) => {
             </div>
 
             <div className="md:flex md:flex-row flex-col mt-6 space-x-8">
-              <div key={product.id} className="relative">
-                {product.image && (
+              <div key={params.id} className="relative">
+                {params.image && (
                   <Image
                     src={urlFor(product.image).url()}
-                    alt={product.title}
+                    alt={params.title}
                     width={500}
                     height={450}
                     className="w-[500px] h-full object-cover"
@@ -93,7 +87,7 @@ const Page = async ({ params }: PageProps) => {
               </div>
               <div className="md:w-1/2 w-screen md:px-6 md:py-0 px-0 py-11">
                 <h4 className="text-2xl font-medium text-[#252B42] top-3 my-1">
-                  {product.title}
+                  {params.title}
                 </h4>
 
                 <div className="flex items-center md:space-x-2 space-x-0 text-xl gap-1 top-12 my-6">
@@ -108,7 +102,7 @@ const Page = async ({ params }: PageProps) => {
                 </div>
 
                 <h3 className="text-2xl font-bold text-[#252B42] my-2">
-                  $ {product.price}
+                  $ {params.price}
                 </h3>
 
                 <h6 className="text-[#737373] font-bold text-sm mt-1 mb-8">
@@ -117,7 +111,7 @@ const Page = async ({ params }: PageProps) => {
                 </h6>
 
                 <p className="text-[#565656] text-sm font-medium">
-                  {product.description}
+                  {params.description}
                 </p>
 
                 <hr className="border-[#BDBDBD] top-[277px] mt-8 mb-7" />
