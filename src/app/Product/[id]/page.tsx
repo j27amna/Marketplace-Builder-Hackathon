@@ -13,7 +13,8 @@ import Footer from '@/app/components/Footer';
 import { urlFor } from '@/sanity/lib/image';
 import Image from 'next/image';
 
-const page = async ({ params }: { params: { id: string } }) => {
+
+const page = async ({ params }: { params: Record<string, string> }) => {
     
     const query = `*[_type == "product" && _id == $id]{
   title, price, description,
@@ -32,7 +33,7 @@ const page = async ({ params }: { params: { id: string } }) => {
      } console.log("Product ID:", params.id);
 
   return (
-    <div key={id}>
+    <div key={params.id}>
             <main>
         <Suspense>
             <Navbar />
