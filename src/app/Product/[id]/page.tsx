@@ -13,10 +13,10 @@ import Footer from '@/app/components/Footer';
 import { urlFor } from '@/sanity/lib/image';
 import Image from 'next/image';
 
-const page = async ({ params }: { params: { id: string } }) => {
+const Page = async ({ params }: { params: { id: string } }) => {
     
     const query = `*[_type == "product" && _id == $id]{
-  title, price, description,
+  title, price, description, isNew,
     "image": productImage.asset._ref,
      "id": _id,
 }[0]`
