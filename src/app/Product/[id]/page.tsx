@@ -137,4 +137,4 @@ const Page = async ({ params }: { params: { id: string } }) => {
   )
 }
 
-export default page
+export default Page;
